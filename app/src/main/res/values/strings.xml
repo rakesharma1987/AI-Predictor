@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AI Predictor</string>
+    <string name="msg_title_bar">Pick 3 \u0026 Pick 4 (AI) Predictor</string>
+    <string name="msg_title_bar_3_predictor_activity">Pick 3 (AI) Predictor</string>
+    <string name="msg_title_bar_4_predictor_activity">Pick 4 (AI) Predictor</string>
+</resources>
