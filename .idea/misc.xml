@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProject/Rakesh_12Pm/RandomNumberGenerator/app/src/main/res/drawable/border.xml" value="0.1605" />
+        <entry key="..\:/AndroidProject/Rakesh_12Pm/RandomNumberGenerator/app/src/main/res/layout/activity_fourpredictor.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidProject/Rakesh_12Pm/RandomNumberGenerator/app/src/main/res/layout/activity_main.xml" value="0.20208333333333334" />
+        <entry key="..\:/AndroidProject/Rakesh_12Pm/RandomNumberGenerator/app/src/main/res/layout/activity_other_apps.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidProject/Rakesh_12Pm/RandomNumberGenerator/app/src/main/res/layout/activity_three_predictor.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Rakesh_12Pm/RandomNumberGenerator/app/src/main/res/layout/layout_items.xml" value="0.264" />
       </map>
     </option>
   </component>

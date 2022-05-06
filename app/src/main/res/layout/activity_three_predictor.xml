@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".ThreePredictorActivity">
 
 <!--    <LinearLayout-->
@@ -192,6 +192,29 @@
         </LinearLayout>
 
     </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gen_2nos"
+        android:text="Generate 2 Number\'s(Free Version)"
+        android:layout_below="@+id/ll_row2"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_gen_40nos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_gen_2nos"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Generate 40 Number\'s(Pro Version)"
+        android:textAllCaps="false"
+
+        />
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -199,7 +222,21 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/ll_row2"
+        android:layout_below="@id/btn_gen_40nos"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner_adview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
         />
 
 </RelativeLayout>

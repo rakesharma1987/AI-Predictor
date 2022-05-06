@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomNumberGenerator">
         <activity
+            android:name=".OtherAppsActivity"
+            android:exported="false" />
+        <activity
             android:name=".FourpredictorActivity"
             android:exported="false" />
         <activity
