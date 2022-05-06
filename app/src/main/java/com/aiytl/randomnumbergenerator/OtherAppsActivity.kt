@@ -32,7 +32,7 @@ class OtherAppsActivity : AppCompatActivity() {
         listItems.add(DataItems(R.drawable.ic_android, "Android", "AIYTL Games"))
         listItems.add(DataItems(R.drawable.ic_android, "Android", "AIYTL Games"))
 
-        val myAdapter : MyRecyclerViewAdapter = MyRecyclerViewAdapter(listItems)
+        val myAdapter : MyRecyclerViewAdapter = MyRecyclerViewAdapter(listItems, context)
         binding.recyclerview.adapter = myAdapter
 
     }

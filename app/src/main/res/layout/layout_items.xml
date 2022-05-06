@@ -11,40 +11,42 @@
     >
 <RelativeLayout
     android:layout_width="150dp"
-    android:layout_height="180dp">
+    android:layout_height="200dp">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="match_parent"
         android:id="@+id/item_imageview"
         android:src="@drawable/ic_launcher_background"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
+        android:layout_above="@id/tv_itemname"
+        android:layout_marginBottom="5dp"
         />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_itemname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/item_imageview"
+        android:layout_above="@id/tv_item_providetr_name"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
         android:text="Item Name"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        />
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_item_providetr_name"
         android:text="AIYTL Games"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_below="@id/tv_itemname"
+        android:textSize="15sp"
         android:layout_marginLeft="10dp"
         android:textColor="@color/black"
-        android:layout_marginTop="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
         />
 
 </RelativeLayout>

@@ -1,15 +1,17 @@
 package com.aiytl.randomnumbergenerator.addapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.aiytl.randomnumbergenerator.model.DataItems
 import com.aiytl.randomnumbergenerator.R
 
-class MyRecyclerViewAdapter(private val items : List<DataItems>) : RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder>(){
+class MyRecyclerViewAdapter(private val items : List<DataItems>, private val context : Context) : RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -22,6 +24,10 @@ class MyRecyclerViewAdapter(private val items : List<DataItems>) : RecyclerView.
         holder.imageView.setImageResource(dataItems!!.imgeResource)
         holder.itemName.setText(dataItems!!.itemName)
         holder.itemProviderName.setText(dataItems!!.itemProviderName)
+
+        holder.imageView.setOnClickListener {
+            Toast.makeText(context, items[position].itemName, Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int {
