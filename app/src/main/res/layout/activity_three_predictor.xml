@@ -91,7 +91,7 @@
             android:backgroundTint="@color/purple_500"
             android:overlapAnchor="false"
             android:spinnerMode="dropdown"
-
+            android:textColor="@android:color/black"
             />
     </LinearLayout>
         <LinearLayout
@@ -182,7 +182,7 @@
             android:layout_marginLeft="5dp"
             >
             <Spinner
-                android:id="@+id/spinner7"
+                android:id="@+id/spinner6"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/purple_500"
@@ -216,6 +216,7 @@
 
         />
     <View
+        android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/background_color_line"
