@@ -1,11 +1,11 @@
-package com.aiytl.randomnumbergenerator
+package com.aiytl.randomnumbergenerator.activity
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
+import com.aiytl.randomnumbergenerator.R
 import com.aiytl.randomnumbergenerator.databinding.ActivityMainBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds

@@ -1,9 +1,10 @@
-package com.aiytl.randomnumbergenerator
+package com.aiytl.randomnumbergenerator.activity
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
+import com.aiytl.randomnumbergenerator.R
 import com.aiytl.randomnumbergenerator.addapter.MyRecyclerViewAdapter
 import com.aiytl.randomnumbergenerator.databinding.ActivityOtherAppsBinding
 import com.aiytl.randomnumbergenerator.model.DataItems
