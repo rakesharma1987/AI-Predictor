@@ -20,21 +20,21 @@ class ThreePredictorActivity : AppCompatActivity() {
     private lateinit var binding: ActivityThreePredictorBinding
     private var numberList = arrayOf("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
     private lateinit var arrayAdapter: ArrayAdapter<String>
-    private var intSpinner1: Long? = 0
-    private var intSpinner2: Long? = 0
-    private var intSpinner3: Long? = 0
-    private var intSpinner4: Long? = 0
-    private var intSpinner5: Long? = 0
-    private var intSpinner6: Long? = 0
-    private var sumOfSpinner14: Long? = 0
-    private var sumOfSpinner25: Long? = 0
-    private var sumOfSpinner36: Long? = 0
-    private var sumOfSpinner16: Long? = 0
-    private var sumOfSpinner24: Long? = 0
-    private var sumOfSpinner31: Long? = 0
-    private var sumOfSpinner12: Long? = 0
-    private var sumOfSpinner23: Long? = 0
-    private var sumOfSpinner65: Long? = 0
+    private var intSpinner1: Long? = 0L
+    private var intSpinner2: Long? = 0L
+    private var intSpinner3: Long? = 0L
+    private var intSpinner4: Long? = 0L
+    private var intSpinner5: Long? = 0L
+    private var intSpinner6: Long? = 0L
+    private var sumOfSpinner14: Long? = 0L
+    private var sumOfSpinner25: Long? = 0L
+    private var sumOfSpinner36: Long? = 0L
+    private var sumOfSpinner16: Long? = 0L
+    private var sumOfSpinner24: Long? = 0L
+    private var sumOfSpinner31: Long? = 0L
+    private var sumOfSpinner12: Long? = 0L
+    private var sumOfSpinner23: Long? = 0L
+    private var sumOfSpinner65: Long? = 0L
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
