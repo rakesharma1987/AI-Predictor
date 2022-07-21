@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import com.aiytl.randomnumbergenerator.R
 import com.aiytl.randomnumbergenerator.databinding.ActivityMainBinding
+import com.aiytl.randomnumbergenerator.singleton.GooglePlayBillingPreferences
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnPick3.setOnClickListener(this)
         binding.btnPick4.setOnClickListener(this)
         binding.btnOtherApp.setOnClickListener(this)
+
+        GooglePlayBillingPreferences.init(this)
 
     }
 

@@ -12,6 +12,7 @@ import com.aiytl.randomnumbergenerator.R
 import com.aiytl.randomnumbergenerator.addapter.FourPredictorAdapter
 import com.aiytl.randomnumbergenerator.databinding.ActivityFourpredictorBinding
 import com.aiytl.randomnumbergenerator.model.FourNumbers
+import com.aiytl.randomnumbergenerator.singleton.GooglePlayBillingPreferences
 import com.android.billingclient.api.*
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
@@ -40,6 +41,12 @@ class FourpredictorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFourpredictorBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        if (GooglePlayBillingPreferences.isPurchasedForFourNo()){
+            binding.btnGen40nos.text = "Generate 40's Rows"
+        }else{
+            binding.btnGen40nos.text = "buy Now"
+        }
 
         supportActionBar!!.title = getString(R.string.msg_title_bar_4_predictor_activity)
 
@@ -298,34 +305,43 @@ class FourpredictorActivity : AppCompatActivity() {
         })
 
         binding.btnGen40nos.setOnClickListener {
-            billingClient.startConnection(object : BillingClientStateListener {
-                override fun onBillingSetupFinished(billingResult: BillingResult) {
-                    if (billingResult.responseCode ==  BillingClient.BillingResponseCode.OK) {
-                        val params = SkuDetailsParams.newBuilder()
-                        params.setSkusList(skulList)
-                            .setType(BillingClient.SkuType.INAPP)
+            if (GooglePlayBillingPreferences.isPurchasedForFourNo()) {
+                generate40sRows()
+            } else {
+                billingClient.startConnection(object : BillingClientStateListener {
+                    override fun onBillingSetupFinished(billingResult: BillingResult) {
+                        if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
+                            val params = SkuDetailsParams.newBuilder()
+                            params.setSkusList(skulList)
+                                .setType(BillingClient.SkuType.INAPP)
 
-                        billingClient.querySkuDetailsAsync(params.build()){
-                                billingResult, skuDetailList ->
+                            billingClient.querySkuDetailsAsync(params.build()) { billingResult, skuDetailList ->
 
-                            for (skuDetail in skuDetailList!!){
-                                val flowPurchase = BillingFlowParams.newBuilder()
-                                    .setSkuDetails(skuDetail)
-                                    .build()
+                                for (skuDetail in skuDetailList!!) {
+                                    val flowPurchase = BillingFlowParams.newBuilder()
+                                        .setSkuDetails(skuDetail)
+                                        .build()
 
-                                val responseCode = billingClient.launchBillingFlow(this@FourpredictorActivity, flowPurchase).responseCode
-                                if (responseCode == 0){
-                                    generate40sRows()
+                                    val responseCode = billingClient.launchBillingFlow(
+                                        this@FourpredictorActivity,
+                                        flowPurchase
+                                    ).responseCode
+                                    if (responseCode == 0) {
+                                        GooglePlayBillingPreferences.setPurchasedValueForFourNo(true)
+                                        binding.btnGen40nos.text = "Generate 40's Rows"
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                override fun onBillingServiceDisconnected() {
-                    // Try to restart the connection on the next request to
-                    // Google Play by calling the startConnection() method.
-                }
-            })
+
+                    override fun onBillingServiceDisconnected() {
+                        // Try to restart the connection on the next request to
+                        // Google Play by calling the startConnection() method.
+                        GooglePlayBillingPreferences.setPurchasedValueForFourNo(false)
+                    }
+                })
+            }
         }
     }
 
