@@ -45,7 +45,7 @@ class FourpredictorActivity : AppCompatActivity() {
         if (GooglePlayBillingPreferences.isPurchasedForFourNo()){
             binding.btnGen40nos.text = "Generate 40's Rows"
         }else{
-            binding.btnGen40nos.text = "buy Now"
+            binding.btnGen40nos.text = "Buy Now"
         }
 
         supportActionBar!!.title = getString(R.string.msg_title_bar_4_predictor_activity)
