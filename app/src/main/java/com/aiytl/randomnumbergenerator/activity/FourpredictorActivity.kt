@@ -3,6 +3,7 @@ package com.aiytl.randomnumbergenerator.activity
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -196,8 +197,13 @@ class FourpredictorActivity : AppCompatActivity() {
             if (sumOfSpinner26 == 1) sumOfSpinner26 = 9
             if (sumOfSpinner37 == 0) sumOfSpinner37 = 7
             if (sumOfSpinner37 == 1) sumOfSpinner37 = 9
-            if (sumOfSpinner48 == 0) sumOfSpinner48 = 0
+            if (sumOfSpinner48 == 0) sumOfSpinner48 = 7
             if (sumOfSpinner48 == 1) sumOfSpinner48 = 9
+
+            Log.d("RESULT", "sumOfSpinner15 $sumOfSpinner15")
+            Log.d("RESULT", "sumOfSpinner26 $sumOfSpinner26")
+            Log.d("RESULT", "sumOfSpinner37 $sumOfSpinner37")
+            Log.d("RESULT", "sumOfSpinner48 $sumOfSpinner48")
             
             var fourNumberList = ArrayList<FourNumbers>()
 
@@ -276,8 +282,13 @@ class FourpredictorActivity : AppCompatActivity() {
             if (sumOfSpinner26 == 1) sumOfSpinner26 = 9
             if (sumOfSpinner37 == 0) sumOfSpinner37 = 7
             if (sumOfSpinner37 == 1) sumOfSpinner37 = 9
-            if (sumOfSpinner48 == 0) sumOfSpinner48 = 0
+            if (sumOfSpinner48 == 0) sumOfSpinner48 = 7
             if (sumOfSpinner48 == 1) sumOfSpinner48 = 9
+
+            Log.d("RESULT", "sumOfSpinner15 $sumOfSpinner15")
+            Log.d("RESULT", "sumOfSpinner26 $sumOfSpinner26")
+            Log.d("RESULT", "sumOfSpinner37 $sumOfSpinner37")
+            Log.d("RESULT", "sumOfSpinner48 $sumOfSpinner48")
 
             var fourNumberList = ArrayList<FourNumbers>()
 

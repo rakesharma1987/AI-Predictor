@@ -195,11 +195,11 @@ class ThreePredictorActivity : AppCompatActivity() {
             for (i in 1..2) {
                 if (i == 1) {
 
-                    var threeNumbers = ThreeNumbers(result14[0], result25[0], result36[0])
+                    var threeNumbers = ThreeNumbers(result14[1], result25[2], result36[3])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 2) {
-                    var threeNumbers = ThreeNumbers(result14[1], result25[1], result36[1])
+                    var threeNumbers = ThreeNumbers(result14[4], result25[5], result36[6])
                     threeNumberList.add(threeNumbers)
                 }
             }
@@ -267,113 +267,113 @@ class ThreePredictorActivity : AppCompatActivity() {
             for (i in 1..40) {
                 if (i == 1) {
 
-                    var threeNumbers = ThreeNumbers(result14[0], result25[0], result36[0])
+                    var threeNumbers = ThreeNumbers(result14[1], result25[2], result36[3])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 2) {
 
-                    var threeNumbers = ThreeNumbers(result14[1], result25[1], result36[1])
+                    var threeNumbers = ThreeNumbers(result14[4], result25[5], result36[6])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 3) {
 
-                    var threeNumbers = ThreeNumbers(result14[2], result25[2], result36[2])
+                    var threeNumbers = ThreeNumbers(result14[7], result25[8], result36[9])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 4) {
 
-                    var threeNumbers = ThreeNumbers(result14[3], result25[3], result36[3])
+                    var threeNumbers = ThreeNumbers(result14[10], result25[11], result36[12])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 5) {
 
-                    var threeNumbers = ThreeNumbers(result14[4], result25[4], result36[4])
+                    var threeNumbers = ThreeNumbers(result14[13], result25[14], result36[15])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 6) {
 
-                    var threeNumbers = ThreeNumbers(result14[5], result25[5], result36[5])
+                    var threeNumbers = ThreeNumbers(result14[16], result25[17], result36[18])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 7) {
 
-                    var threeNumbers = ThreeNumbers(result14[6], result25[6], result36[6])
+                    var threeNumbers = ThreeNumbers(result14[19], result25[20], result36[21])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 8) {
-                    var threeNumbers = ThreeNumbers(result14[8], result25[1], result36[0])
+                    var threeNumbers = ThreeNumbers(result14[22], result25[23], result36[24])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 9) {
-                    var threeNumbers = ThreeNumbers(result14[7], result25[7], result36[7])
+                    var threeNumbers = ThreeNumbers(result14[24], result25[23], result36[22])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 10) {
-                    var threeNumbers = ThreeNumbers(result14[8], result25[8], result36[8])
+                    var threeNumbers = ThreeNumbers(result14[22], result25[21], result36[20])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 11) {
-                    var threeNumbers = ThreeNumbers(result14[9], result25[9], result36[9])
+                    var threeNumbers = ThreeNumbers(result14[20], result25[19], result36[18])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 12) {
-                    var threeNumbers = ThreeNumbers(result14[10], result25[10], result36[10])
+                    var threeNumbers = ThreeNumbers(result14[18], result25[17], result36[16])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 13) {
-                    var threeNumbers = ThreeNumbers(result14[11], result25[11], result36[11])
+                    var threeNumbers = ThreeNumbers(result14[16], result25[15], result36[14])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 14) {
-                    var threeNumbers = ThreeNumbers(result14[12], result25[12], result36[12])
+                    var threeNumbers = ThreeNumbers(result14[14], result25[13], result36[12])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 15) {
-                    var threeNumbers = ThreeNumbers(result14[13], result25[13], result36[13])
+                    var threeNumbers = ThreeNumbers(result14[12], result25[11], result36[10])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 16) {
-                    var threeNumbers = ThreeNumbers(result14[14], result25[14], result36[14])
+                    var threeNumbers = ThreeNumbers(result14[10], result25[9], result36[8])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 17) {
-                    var threeNumbers = ThreeNumbers(result14[15], result25[15], result36[15])
+                    var threeNumbers = ThreeNumbers(result14[8], result25[7], result36[6])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 18) {
-                    var threeNumbers = ThreeNumbers(result14[16], result25[16], result36[16])
+                    var threeNumbers = ThreeNumbers(result14[6], result25[5], result36[4])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 19) {
-                    var threeNumbers = ThreeNumbers(result14[17], result25[17], result36[17])
+                    var threeNumbers = ThreeNumbers(result14[4], result25[3], result36[2])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 20) {
-                    var threeNumbers = ThreeNumbers(result14[18], result25[18], result36[18])
+                    var threeNumbers = ThreeNumbers(result14[2], result25[1], result36[0])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 21) {
-                    var threeNumbers = ThreeNumbers(result14[19], result25[19], result36[19])
+                    var threeNumbers = ThreeNumbers(result14[0], result25[1], result36[2])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 22) {
-                    var threeNumbers = ThreeNumbers(result14[20], result25[20], result36[20])
+                    var threeNumbers = ThreeNumbers(result14[0], result25[2], result36[1])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 23) {
-                    var threeNumbers = ThreeNumbers(result14[21], result25[21], result36[21])
+                    var threeNumbers = ThreeNumbers(result14[1], result25[0], result36[2])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 24) {
-                    var threeNumbers = ThreeNumbers(result14[22], result25[22], result36[22])
+                    var threeNumbers = ThreeNumbers(result14[2], result25[0], result36[1])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 25) {
-                    var threeNumbers = ThreeNumbers(result14[23], result25[23], result36[23])
+                    var threeNumbers = ThreeNumbers(result14[2], result25[3], result36[4])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 26) {
-                    var threeNumbers = ThreeNumbers(result14[24], result25[24], result36[24])
+                    var threeNumbers = ThreeNumbers(result14[4], result25[3], result36[0])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 27) {
@@ -389,7 +389,7 @@ class ThreePredictorActivity : AppCompatActivity() {
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 30) {
-                    var threeNumbers = ThreeNumbers(result14[18], result25[17], result36[16])
+                    var threeNumbers = ThreeNumbers(result14[1], result25[17], result36[16])
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 31) {
@@ -429,7 +429,7 @@ class ThreePredictorActivity : AppCompatActivity() {
                     threeNumberList.add(threeNumbers)
                 }
                 if (i == 40) {
-                    var threeNumbers = ThreeNumbers(result14[7], result25[3], result36[3])
+                    var threeNumbers = ThreeNumbers(result14[7], result25[13], result36[3])
                     threeNumberList.add(threeNumbers)
                 }
             }
