@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import com.aiytl.randomnumbergenerator.R
-import com.aiytl.randomnumbergenerator.addapter.MyRecyclerViewAdapter
+import com.aiytl.randomnumbergenerator.addapter.OtherAppsAdapter
 import com.aiytl.randomnumbergenerator.databinding.ActivityOtherAppsBinding
 import com.aiytl.randomnumbergenerator.model.DataItems
 
@@ -31,7 +31,7 @@ class OtherAppsActivity : AppCompatActivity() {
         listItems.add(DataItems(R.drawable.ic_who_is_your_true_partner, "Who is Your True Partner", "AIYTL Games", "com.cmp.aityl"))
 
 
-        val myAdapter : MyRecyclerViewAdapter = MyRecyclerViewAdapter(listItems, context)
+        val myAdapter : OtherAppsAdapter = OtherAppsAdapter(listItems, context)
         binding.recyclerview.adapter = myAdapter
 
     }

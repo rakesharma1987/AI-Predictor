@@ -9,13 +9,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.aiytl.randomnumbergenerator.model.DataItems
 import com.aiytl.randomnumbergenerator.R
 
-class MyRecyclerViewAdapter(private val items : List<DataItems>, private val context : Context) : RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder>(){
+class OtherAppsAdapter(private val items : List<DataItems>, private val context : Context) : RecyclerView.Adapter<OtherAppsAdapter.MyViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {

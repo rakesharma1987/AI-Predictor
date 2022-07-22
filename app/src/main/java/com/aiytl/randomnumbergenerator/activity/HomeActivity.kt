@@ -11,7 +11,7 @@ import com.aiytl.randomnumbergenerator.singleton.GooglePlayBillingPreferences
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class HomeActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var context: Context
     private lateinit var binding: ActivityMainBinding
 

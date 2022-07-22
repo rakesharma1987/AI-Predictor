@@ -15,7 +15,8 @@
         >
         <activity
             android:name=".activity.OtherAppsActivity"
-            android:exported="false" />
+            android:exported="false"
+            />
         <activity
             android:name=".activity.FourpredictorActivity"
             android:exported="false" />
@@ -27,7 +28,7 @@
             android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
